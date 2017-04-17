@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8D1C577-02E9-4568-B254-1E8F4456A7B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Netwatch.My.MyApplication</StartupObject>
+    <RootNamespace>Netwatch</RootNamespace>
+    <AssemblyName>Netwatch</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>https://www.facebook.com/Infinity.Researches</SupportUrl>
+    <ProductName>Netwatch</ProductName>
+    <PublisherName>Infinity Researches</PublisherName>
+    <SuiteName>Netwatch</SuiteName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>22</ApplicationRevision>
+    <ApplicationVersion>2.1.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\..\..\..\Desktop\Netwatch\</OutputPath>
+    <DocumentationFile>Netwatch.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Netwatch.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico_Netwatcher.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>70F1EF6084F4425EFF38799CD36D8256C04CED8E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="B3.vb" />
+    <Compile Include="DataAmount.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCard.Designer.vb">
+      <DependentUpon>frmCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEULA.Designer.vb">
+      <DependentUpon>frmEULA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEULA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFakeNM.Designer.vb">
+      <DependentUpon>frmFakeNM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFakeNM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGraph.Designer.vb">
+      <DependentUpon>frmGraph.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGraph.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGuide.Designer.vb">
+      <DependentUpon>frmGuide.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGuide.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPointer.Designer.vb">
+      <DependentUpon>frmPointer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPointer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashScreen.Designer.vb">
+      <DependentUpon>frmSplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdater.Designer.vb">
+      <DependentUpon>frmUpdater.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdater.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyReg.vb" />
+    <Compile Include="Panels\ucPanel1.Designer.vb">
+      <DependentUpon>ucPanel1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ucPanel1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\ucPanel2.Designer.vb">
+      <DependentUpon>ucPanel2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ucPanel2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\ucPanel3.Designer.vb">
+      <DependentUpon>ucPanel3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ucPanel3.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\ucPanel4.Designer.vb">
+      <DependentUpon>ucPanel4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ucPanel4.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\ucPanel5.Designer.vb">
+      <DependentUpon>ucPanel5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ucPanel5.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\ucPanel6.Designer.vb">
+      <DependentUpon>ucPanel6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ucPanel6.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PictureCheckBoxes.vb" />
+    <Compile Include="TextEncryption.vb" />
+    <Compile Include="UpdateCenter.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCard.resx">
+      <DependentUpon>frmCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEULA.resx">
+      <DependentUpon>frmEULA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFakeNM.resx">
+      <DependentUpon>frmFakeNM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGraph.resx">
+      <DependentUpon>frmGraph.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGuide.resx">
+      <DependentUpon>frmGuide.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPointer.resx">
+      <DependentUpon>frmPointer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdater.resx">
+      <DependentUpon>frmUpdater.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\ucPanel1.resx">
+      <DependentUpon>ucPanel1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\ucPanel2.resx">
+      <DependentUpon>ucPanel2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\ucPanel3.resx">
+      <DependentUpon>ucPanel3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\ucPanel4.resx">
+      <DependentUpon>ucPanel4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\ucPanel5.resx">
+      <DependentUpon>ucPanel5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\ucPanel6.resx">
+      <DependentUpon>ucPanel6.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\doc_EULA.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_Splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_infinitylogo_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ico_Netwatcher.ico" />
+    <None Include="Resources\png_iON.png" />
+    <None Include="Resources\png_iOFF.png" />
+    <None Include="Resources\giF_LOGO.gif" />
+    <None Include="Resources\bg_fakeSAVE.png" />
+    <None Include="Resources\bg_fakeDRAG.png" />
+    <None Include="Resources\bg_arrow.png" />
+    <None Include="Resources\png_red.png" />
+    <None Include="Resources\png_green.png" />
+    <None Include="Resources\ico_red.ico" />
+    <None Include="Resources\ico_green.ico" />
+    <None Include="Resources\ani_flicker.gif" />
+    <None Include="Resources\panelfinal.png" />
+    <None Include="Resources\png_ON.png" />
+    <None Include="Resources\png_OFF.png" />
+    <None Include="Resources\logo_SLT.png" />
+    <None Include="Resources\bbtitle.png" />
+    <None Include="Resources\img_SLTScreen.png" />
+    <None Include="Resources\img_new.png" />
+    <None Include="Resources\img_credent.png" />
+    <None Include="Resources\mac_Chart.png" />
+    <None Include="Resources\1410798921_alt.png" />
+    <None Include="Resources\1410798818_MB__range.png" />
+    <None Include="Resources\screenshot_66.png" />
+    <None Include="Resources\bg_Panel11.png" />
+    <None Include="Resources\logo_BB.jpg" />
+    <None Include="Resources\bg_backloop.png" />
+    <None Include="Resources\prograd.png" />
+    <None Include="Resources\bg002.png" />
+    <None Include="Resources\img_Card.png" />
+    <None Include="Resources\systemtray.png" />
+    <None Include="Resources\imgALT2.png" />
+    <None Include="Resources\imgALT1.png" />
+    <None Include="Resources\img_Guide1.png" />
+    <None Include="Resources\panelBG.png" />
+    <None Include="Resources\bg_Panel1.png" />
+    <None Include="Resources\bg_splash2.png" />
+    <None Include="Resources\icon_1CM_96x92.png" />
+    <None Include="Resources\ico_storage.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\newbg.png" />
+    <None Include="Resources\png.png" />
+    <None Include="Resources\img_shine.png" />
+    <None Include="Resources\bg_new.png" />
+    <None Include="Resources\honeycomb.jpg" />
+    <None Include="Resources\bg_fake.png" />
+    <None Include="Resources\bg001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
